@@ -5,7 +5,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 import org.springframework.data.mongodb.core.mapping.Document;
 
-import javax.persistence.Id;
+
 
 @Data
 @NoArgsConstructor
@@ -13,8 +13,7 @@ import javax.persistence.Id;
 @Document(collection = "usuarios")
 public class User{
 
-    @Id
-    private Integer id;
+
     private String identification;
     private String name;
     private String address;
